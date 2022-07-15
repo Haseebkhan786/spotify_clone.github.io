@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Lora:ital@1&family=Open+Sans:wght@300&family=Tapestry&display=swap');
+
+:root {
+    --blue: #F75C79;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'League Gothic', sans-serif; */
+    /* font-family: 'Lora', serif; */
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Tapestry', cursive;
+
+}
+
+#navbar {
+    background-color: var(--blue);
+    height: 50px;
+    margin-top: -16px;
+}
+
+#navbar ul img {
+
+    width: 35px;
+    height: 35px;
+}
+
+#navbar ul {
+
+    display: flex;
+    align-items: center;
+    height: 50px;
+
+}
+
+#navbar ul li {
+    padding: 0px 20px;
+    list-style: none;
+    cursor: pointer;
+}
+
+#navbar ul li:hover {
+    padding: 0px 20px;
+    list-style: none;
+    cursor: pointer;
+    color: whitesmoke;
+    transition: 0.5s ease-in;
+}
+
+.songcontainer {
+
+    background: url('background.jpg');
+    background-size: cover;
+    border: 2px solid var(--blue);
+    position: absolute;
+    width: 70vw;
+    height: 70vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.songitem {
+    /* background-color: var(--blue); */
+    /* background:rgba(247,92,121,0.25); */
+
+    background: rgba(255, 255, 255, 0.5);
+    margin: 1vh;
+    /* position: relative; */
+    border-radius: 10px;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.songitem img {
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    /* max-height:40px ; */
+    /* vertical-align: middle; */
+
+}
+
+.bottom {
+    position: absolute;
+    left: 0;
+    right: 0;
+    /* top: 0; */
+    bottom: 0;
+    height: 14vh;
+    background-color: var(--blue);
+}
+
+#file {
+    width: 75vw;
+    cursor: pointer;
+    /* background-color: whitesmoke; */
+
+}
+
+.bottom img {
+    height: 35px;
+    width: 80px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.btmcontent {
+    width: 91vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 10vh;
+
+}
+
+#icons {
+    /* font-size: larger; */
+    font-size: 2rem;
+}
